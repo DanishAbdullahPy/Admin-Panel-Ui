@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Admin DashBoard</title>
+</head>
+<body>
+
+    <header> <h1 id="op">Admin Panel </h1></header>
+    <div class="container">
+        <input type="text" id="searchInput" placeholder="Search by name or email">
+
+        <table id="dataTable">
+            <thead>
+                <tr>
+                    <th><input type="checkbox" id="selectAll"></th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+
+        <div class="pagination">
+            <button id="deleteSelected">Delete Selected</button>
+            <button id="prevPage">Previous</button>
+            <button id="nextPage">Next</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+       
+</body>
+</html>
